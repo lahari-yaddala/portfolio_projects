@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="portfolio-header">
+        <h1>PROJECT PORTFOLIO</h1>
+        <p class="portfolio-line">Arduino | Embedded Systems | Radar Signal Processing | Digital Design</p>
+
+        <div class="profile-block">
+          <h2>Yaddala Lahari</h2>
+          <p>B.Tech, Electronics and Communication Engineering</p>
+          <p>SRM University-AP | 2023–2027</p>
+          <p>Email: <a href="mailto:lahari121843@gmail.com">lahari121843@gmail.com</a></p>
+          <p>GitHub: <a href="https://github.com/lahari-yaddala" target="_blank" rel="noreferrer">github.com/lahari-yaddala</a></p>
+        </div>
+      </header>
+
+      <main class="portfolio-main">
+        <div class="filter-bar" aria-label="Project categories">
+          <button class="filter-btn active" data-filter="all" type="button">
+            All Projects <span>(6)</span>
+          </button>
+          <button class="filter-btn" data-filter="embedded" type="button">
+            Embedded Systems <span>(4)</span>
+          </button>
+          <button class="filter-btn" data-filter="radar" type="button">
+            Radar &amp; Signal Processing <span>(1)</span>
+          </button>
+          <button class="filter-btn" data-filter="vlsi" type="button">
+            VLSI &amp; Digital Design <span>(1)</span>
+          </button>
+        </div>
+
+        <section id="project-grid" class="project-grid" aria-live="polite"></section>
+      </main>
+    </div>
+
+    <div id="project-modal" class="modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close="modal"></div>
+      <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button type="button" class="modal-close" aria-label="Close project details">×</button>
+        <div class="modal-header">
+          <span id="modal-category" class="modal-category"></span>
+          <h2 id="modal-title">Project Details</h2>
+        </div>
+        <p id="modal-description" class="modal-description"></p>
+        <div id="modal-meta" class="modal-meta"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
