@@ -6,7 +6,7 @@ const projects = [
     categoryKey: 'embedded',
     image: './Screenshot%202026-09-28%20214712.png',
     github: 'https://github.com/lahari-yaddala/Smart-Vehicle-Safety-System-Arduino',
-    demoVideo: 'https://drive.google.com/file/d/1-0xvMZoXLInotnsIcZpr33CZMcLKTpZk/view',
+    demoVideo: 'https://drive.google.com/file/d/1-0xvMZoXLInotnsIcZpr33CZMcLKTpZk/view?usp=sharing',
     description:
       'A smart road-safety solution built to detect risky driving patterns and reduce collision chances through sensor-based awareness and real-time response mechanisms.',
     tags: ['Embedded C', 'Sensors', 'Safety', 'IoT'],
